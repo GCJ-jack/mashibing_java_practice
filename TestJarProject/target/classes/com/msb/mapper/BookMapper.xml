@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.msb.mapper.BookMapper">
+    <select id="selectAllBooks"  resultType="Book">
+        select * from books
+    </select>
+    <select id="selectOneBook" resultType="Book">
+        select * from books where bookName =#{param1} and author = #{param2}
+    </select>
+    <select id="selectOneBook2" resultType="Book">
+        select * from books where bookName =#{bookName} and author = #{author}
+    </select>
+    <select id="selectOneBook3" resultType="Book">
+        select * from books where bookName =#{param1} and author = #{param2.author}
+    </select>
+    <insert id="insertBook">
+        insert into books (bNo,bookName,author,price) values (#{bNo},#{bookName},#{author},#{price})
+    </insert>
+</mapper>

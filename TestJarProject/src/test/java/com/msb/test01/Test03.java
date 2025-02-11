@@ -6,15 +6,20 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Iterator;
-import java.util.List;
 
-public class Test02 {
+public class Test03 {
+
     public static void main(String[] args) throws IOException {
-        //制定核心配置文件
+
+        // create and configure beans
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+
         String resource = "mybatis.xml";
         //获取文件加载的输入流
         InputStream inputStream = Resources.getResourceAsStream(resource);
@@ -22,26 +27,19 @@ public class Test02 {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         //通过工厂类获得一个会话
         SqlSession sqlSession = sqlSessionFactory.openSession();
-//        //执行查询
-//        List list = sqlSession.selectList("Book.selectAllBooks");
-//
-//        //遍历数据库中的书本
-//        for(int i = 0; i < list.size(); i++){
-//            Book book = (Book) list.get(i);
-//            System.out.println("书本编号: " + book.getbNo() + " 书本名称: " + book.getBookName() + " 书本作者: " + book.getAuthor() + " 书本价格: " + book.getPrice());
-//        }
-        //资源关闭
-//        sqlSession.close();
 
         BookMapper mapper = sqlSession.getMapper(BookMapper.class);
 
-//        mapper.selectAllBooks().forEach(System.out::println);
+        //把对象从spring容器中取出来
+        Book book = (Book) context.getBean("book");
 
-        Book book = new Book(6,"西游记","罗贯中",60.0);
+        book.setAuthor("罗贯中");
+        book.setBookName("三国演义");
 
 
-        mapper.insertBook(book);
+        Book book2 = mapper.selectOneBook(book.getBookName(),book.getAuthor());
 
-        System.out.println(book.getBookName());
+        System.out.println(book2.getBookName());
+        sqlSession.close();
     }
 }
