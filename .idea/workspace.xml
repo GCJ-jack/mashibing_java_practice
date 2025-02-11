@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TestWebProject:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="606a8895-2e51-4059-a6c2-d71b3f832900" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TestJarProject/src/main/java/com/msb/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestJarProject/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestJarProject/src/main/resources/com/msb/mapper/BookMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestJarProject/src/test/java/com/msb/test01/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebProject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebProject/src/main/java/com/msb/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebProject/src/main/resources/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebProject/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebProject/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/src/main/java/com/msb/pojo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/src/main/java/com/msb/pojo/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/src/main/resources/mapper/BookMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/src/main/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/src/main/resources/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/src/test/java/com/msb/test01/Test02.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/src/test/java/com/msb/test01/Test02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/target/classes/com/msb/pojo/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/target/classes/com/msb/pojo/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/target/classes/mapper/BookMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/target/classes/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/target/classes/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/target/test-classes/com/msb/test01/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/target/test-classes/com/msb/test01/Test01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJarProject/target/test-classes/com/msb/test01/Test02.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestJarProject/target/test-classes/com/msb/test01/Test02.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +48,13 @@
     &quot;accountId&quot;: &quot;4b6e18d0-4029-486d-9040-2148ecbde3b3&quot;
   }
 }</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -77,10 +81,15 @@
     "Application.Test01.executor": "Run",
     "Application.Test02.executor": "Run",
     "Application.Test03.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.TestJarProject [org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile].executor": "Run",
+    "Maven.TestWebProject [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 9.0.99.executor": "Run",
+    "Tomcat Server.Unnamed.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "19",
     "kotlin-language-version-configured": "true",
@@ -107,7 +116,7 @@
       <recent name="$PROJECT_DIR$/TestJarProject/src/main/resources/com.msb" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.99">
     <configuration name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.test01.Test02" />
       <module name="TestJarProject" />
@@ -121,6 +130,97 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.99" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.99" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="19" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="TestWebProject:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/TestWebProject_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a622b1a0-0c1f-4426-af29-f7179b66ebda" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51627" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="TestWebProject:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Test02" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.99" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test02" />
@@ -144,7 +244,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738415234505</updated>
       <workItem from="1738815259167" duration="5648000" />
-      <workItem from="1739157551006" duration="21830000" />
+      <workItem from="1739157551006" duration="29711000" />
     </task>
     <servers />
   </component>
